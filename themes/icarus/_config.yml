@@ -30,11 +30,11 @@ navbar:
         分类: /categories
         标签: /tags
         关于: /about
-    # Navigation bar links to be shown on the right
-    links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+    # # Navigation bar links to be shown on the right
+    # links:
+    #     Download on GitHub:
+    #         icon: fab fa-github
+    #         url: 'https://github.com/ppoffice/hexo-theme-icarus'
 # Footer section link settings
 footer:
     # Links to be shown on the right of the footer section
@@ -139,22 +139,22 @@ widgets:
         # Path or URL for the follow button
         follow_link: 'https://github.com/sincatter'
         # Links to be shown on the bottom of the profile widget
-        social_links:
-            Github:
-                icon: fab fa-github
-                url: 'https://github.com/sincatter'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
-            Dribbble:
-                icon: fab fa-dribbble
-                url: 'https://dribbble.com'
-            RSS:
-                icon: fas fa-rss
-                url: /
+        # social_links:
+        #     Github:
+        #         icon: fab fa-github
+        #         url: 'https://github.com/sincatter'
+        #     Facebook:
+        #         icon: fab fa-facebook
+        #         url: 'https://facebook.com'
+        #     Twitter:
+        #         icon: fab fa-twitter
+        #         url: 'https://twitter.com'
+        #     Dribbble:
+        #         icon: fab fa-dribbble
+        #         url: 'https://dribbble.com'
+        #     RSS:
+        #         icon: fas fa-rss
+        #         url: /
     -
         # Widget name
         type: toc
@@ -237,4 +237,4 @@ providers:
     # Name or URL of the webfont CDN provider
     fontcdn: google
     # Name or URL of the webfont Icon CDN provider
-    iconcdn: fontawesome
+    iconcdn: bootcdn

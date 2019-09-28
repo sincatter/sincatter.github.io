@@ -8,13 +8,13 @@ subtitle: 黑夜结束之时，太阳照常升起
 description: 自信，勇敢，梦想，希望
 keywords:
 author: 徐木牛
-language: zh-CN
+language: zh-cn
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.sincatter.com
-root: /blog
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -73,12 +73,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: icarus
+theme: jsimple
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo:
-    github: git@github.com:sincatter/sincatter.github.io.git, master
-    coding: git@git.dev.tencent.com:sincatter/blog.git, master
+  repo: 
+    github: git@github.com:sincatter/sincatter.github.io.git,master
+    coding: git@git.dev.tencent.com:sincatter/blog.git,master
