@@ -4,11 +4,11 @@
 
 # Site
 title: 木牛’博客
-subtitle: 黑夜结束之时，太阳照常升起
-description: 自信，勇敢，梦想，希望
+subtitle: 自信，勇敢，梦想，希望
+description: 黑夜结束之时，太阳照常升起
 keywords:
 author: 徐木牛
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -39,7 +39,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jsimple
+theme: matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,3 +82,39 @@ deploy:
   repo: 
     github: git@github.com:sincatter/sincatter.github.io.git,master
     coding: git@git.dev.tencent.com:sincatter/blog.git,master
+
+# emojis支持
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
+#代码高亮
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'duotone-light'
+  line_number: true    # default false
+  custom_css:
+
+# 支持搜索
+search:
+  path: search.xml
+  field: post
+
+# 中文标题转拼音
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
+
+# 支持RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
