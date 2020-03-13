@@ -81,7 +81,7 @@ deploy:
   type: git
   repo: 
     github: git@github.com:sincatter/sincatter.github.io.git,master
-    coding: git@git.dev.tencent.com:sincatter/blog.git,master
+    coding: git@e.coding.net:sincatter/blog.git,master
 
 # emojis支持
 githubEmojis:
