@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>木牛’博客</title>
+  
+  <subtitle>自信，勇敢，梦想，希望</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.sincatter.com/"/>
+  <updated>2020-03-13T19:07:30.242Z</updated>
+  <id>https://blog.sincatter.com/</id>
+  
+  <author>
+    <name>徐木牛</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo更换电脑部署</title>
+    <link href="https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
+    <id>https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</id>
+    <published>2020-03-13T19:06:43.000Z</published>
+    <updated>2020-03-13T19:07:30.242Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;软件准备（node-amp-amp-npm）&quot;&gt;&lt;a href=&quot;#软件准备（node-amp-amp-npm）&quot; class=&quot;headerlink&quot; title=&quot;软件准备（node &amp;amp;&amp;amp; npm）&quot;&gt;&lt;/a&gt;软件准备（node
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="工具" scheme="https://blog.sincatter.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单向链表反转</title>
+    <link href="https://blog.sincatter.com/2019/10/06/dan-xiang-lian-biao-fan-zhuan/"/>
+    <id>https://blog.sincatter.com/2019/10/06/dan-xiang-lian-biao-fan-zhuan/</id>
+    <published>2019-10-06T13:15:34.000Z</published>
+    <updated>2020-03-13T15:54:23.269Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;单向链表反转&quot;&gt;&lt;a href=&quot;#单向链表反转&quot; class=&quot;headerlink&quot; title=&quot;单向链表反转&quot;&gt;&lt;/a&gt;单向链表反转&lt;/h1&gt;&lt;h2 id=&quot;直接递归&quot;&gt;&lt;a href=&quot;#直接递归&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://blog.sincatter.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://blog.sincatter.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+</feed>
