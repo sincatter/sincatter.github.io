@@ -62,6 +62,33 @@
     
     
     <entry>
+      <title>linux编程命令一二</title>
+      <link href="/2020/03/14/linux-bian-cheng-ming-ling-yi-er/"/>
+      <url>/2020/03/14/linux-bian-cheng-ming-ling-yi-er/</url>
+      
+        <content type="html"><![CDATA[<p>系统</p><h2 id="fdisk-磁盘分区挂载"><a href="#fdisk-磁盘分区挂载" class="headerlink" title="fdisk:磁盘分区挂载"></a>fdisk:磁盘分区挂载</h2><ul><li>fdisk -l 查看磁盘挂载情况</li><li>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令<ul><li>m 帮助</li><li>d 删除已存在的分区</li><li>p 查看已存在的分区</li><li>n 新增分区，并可指定分区大小</li><li>t 改变文件系统格式对应的id，只是修改id，后续还要利用mkfs命令进行格式化</li><li>l 列出所有文件系统格式对应id</li><li>w 保存所作的分区修改</li></ul></li><li><p>mkfs 格式化分区为指定类型的文件系统</p><ul><li>-V 显示详细信息</li><li>-t 指定目的文件系统</li><li>-c 执行格式化之前检查磁盘坏道情况</li><li>示例: mkfs -V -t ext3 -c /dev/sda1</li><li>mkfs.ext3/mkfs.fat32之类更形象的命令，实质上也是在调用mkfs命令</li></ul></li><li><p>dd 拷贝文件块<br>  参考<a href="https://www.cnblogs.com/misswangxing/p/10911969.html" target="_blank" rel="noopener">pp命令详解</a></p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 备忘 </tag>
+            
+            <tag> 命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo更换电脑部署</title>
       <link href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
       <url>/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</url>

@@ -82,6 +82,37 @@
   </entry>
   
   <entry>
+    <title>linux编程命令一二</title>
+    <link href="https://blog.sincatter.com/2020/03/14/linux-bian-cheng-ming-ling-yi-er/"/>
+    <id>https://blog.sincatter.com/2020/03/14/linux-bian-cheng-ming-ling-yi-er/</id>
+    <published>2020-03-14T15:08:44.000Z</published>
+    <updated>2020-03-15T17:05:14.466Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;系统&lt;/p&gt;
+&lt;h2 id=&quot;fdisk-磁盘分区挂载&quot;&gt;&lt;a href=&quot;#fdisk-磁盘分区挂载&quot; class=&quot;headerlink&quot; title=&quot;fdisk:磁盘分区挂载&quot;&gt;&lt;/a&gt;fdisk:磁盘分区挂载&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;fdisk -l
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="命令" scheme="https://blog.sincatter.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo更换电脑部署</title>
     <link href="https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
     <id>https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</id>

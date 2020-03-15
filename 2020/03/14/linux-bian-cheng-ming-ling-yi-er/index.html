@@ -4,10 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="hexo更换电脑部署, 木牛’博客">
-    <meta name="description" content="软件准备（node &amp;amp;&amp;amp; npm）官网下载nodejs(版本为:Linux 二进制文件 (x64))
-sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/
-sudo mv">
+    <meta name="keywords" content="linux编程命令一二, 木牛’博客">
+    <meta name="description" content="系统
+fdisk:磁盘分区挂载
+fdisk -l 查看磁盘挂载情况
+fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令
+m 帮助
+d 删除已存在的分区
+p 查看已存在的分区
+n 新增分区，并可指定分区大小
+t ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +21,7 @@ sudo mv">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>hexo更换电脑部署 | 木牛’博客</title>
+    <title>linux编程命令一二 | 木牛’博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -206,13 +212,13 @@ sudo mv">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        hexo更换电脑部署
+                        linux编程命令一二
                     </div>
                 </div>
             </div>
@@ -239,8 +245,8 @@ sudo mv">
                                 <span class="chip bg-color">备忘</span>
                             </a>
                         
-                            <a href="/tags/工具/">
-                                <span class="chip bg-color">工具</span>
+                            <a href="/tags/命令/">
+                                <span class="chip bg-color">命令</span>
                             </a>
                         
                     </div>
@@ -279,27 +285,32 @@ sudo mv">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="软件准备（node-amp-amp-npm）"><a href="#软件准备（node-amp-amp-npm）" class="headerlink" title="软件准备（node &amp;&amp; npm）"></a>软件准备（node &amp;&amp; npm）</h2><p>官网下载nodejs(版本为:Linux 二进制文件 (x64))<br><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/nodejs_download.png" alt=""></p>
-<pre class="line-numbers language-lang-shell"><code class="language-lang-shell">sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/
-sudo mv /opt/node-v12.16.1-linux-x64 /opt/nodejs
-sudo ln -s /opt/nodejs/bin/node /usr/local/bin/node
-sudo ln -s /opt/nodejs/bin/npm /usr/local/bin/npm
-# 更换淘宝软件源
-sudo npm config set registry https://registry.npm.taobao.org 
-source ~/.bashrc
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>检查安装完毕</p>
-<pre class="line-numbers language-lang-shell"><code class="language-lang-shell">npm -v
-node -v
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>下载配置好的代码仓库，仓库存在两个分支hexo(文章分支)和master(静态文件分支)</p>
-<pre class="line-numbers language-lang-shell"><code class="language-lang-shell">git clone -b hexo  git@e.coding.net:sincatter/blog.git
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>安装hexo</p>
-<pre><code>sudo npm install -g hexo-cli
-cd blog
-npm install hexo --save
-</code></pre><script>
+                <p>系统</p>
+<h2 id="fdisk-磁盘分区挂载"><a href="#fdisk-磁盘分区挂载" class="headerlink" title="fdisk:磁盘分区挂载"></a>fdisk:磁盘分区挂载</h2><ul>
+<li>fdisk -l 查看磁盘挂载情况</li>
+<li>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令<ul>
+<li>m 帮助</li>
+<li>d 删除已存在的分区</li>
+<li>p 查看已存在的分区</li>
+<li>n 新增分区，并可指定分区大小</li>
+<li>t 改变文件系统格式对应的id，只是修改id，后续还要利用mkfs命令进行格式化</li>
+<li>l 列出所有文件系统格式对应id</li>
+<li>w 保存所作的分区修改</li>
+</ul>
+</li>
+<li><p>mkfs 格式化分区为指定类型的文件系统</p>
+<ul>
+<li>-V 显示详细信息</li>
+<li>-t 指定目的文件系统</li>
+<li>-c 执行格式化之前检查磁盘坏道情况</li>
+<li>示例: mkfs -V -t ext3 -c /dev/sda1</li>
+<li>mkfs.ext3/mkfs.fat32之类更形象的命令，实质上也是在调用mkfs命令</li>
+</ul>
+</li>
+<li><p>dd 拷贝文件块<br>  参考<a href="https://www.cnblogs.com/misswangxing/p/10911969.html" target="_blank" rel="noopener">pp命令详解</a></p>
+</li>
+</ul>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -474,8 +485,8 @@ npm install hexo --save
                 </a>
             </div>
             <br/>
-            <a  href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/">
-                    《hexo更换电脑部署》
+            <a  href="/2020/03/14/linux-bian-cheng-ming-ling-yi-er/">
+                    《linux编程命令一二》
             </a> 由
             <a href="https://blog.sincatter.com">
                 徐木牛
@@ -520,32 +531,32 @@ npm install hexo --save
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/14/linux-bian-cheng-ming-ling-yi-er/">
+                <a href="/2020/03/15/shi-yong-ruan-jian-ji-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="linux编程命令一二">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="使用软件记录">
                         
-                        <span class="card-title">linux编程命令一二</span>
+                        <span class="card-title">使用软件记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            系统
-fdisk:磁盘分区挂载
-fdisk -l 查看磁盘挂载情况
-fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令
-m 帮助
-d 删除已存在的分区
-p 查看已存在的分区
-n 新增分区，并可指定分区大小
-t 
+                            
+此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址
+
+
+virtualbox
+Windows/Linux/Mac当前OS: Ubuntu 18.04 LTS
+
+
+主程序，安装时仓库版本为5.2.34sudo apt-get 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
                         </span>
                         <span class="publish-author">
                             
@@ -566,8 +577,12 @@ t
                         <span class="chip bg-color">备忘</span>
                     </a>
                     
-                    <a href="/tags/命令/">
-                        <span class="chip bg-color">命令</span>
+                    <a href="/tags/工具/">
+                        <span class="chip bg-color">工具</span>
+                    </a>
+                    
+                    <a href="/tags/记录/">
+                        <span class="chip bg-color">记录</span>
                     </a>
                     
                 </div>
@@ -581,31 +596,33 @@ t
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/06/dan-xiang-lian-biao-fan-zhuan/">
+                <a href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="单向链表反转">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="hexo更换电脑部署">
                         
-                        <span class="card-title">单向链表反转</span>
+                        <span class="card-title">hexo更换电脑部署</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            单向链表的反转是关于链表的一个基本操作，使用场景的不同往往会对时间复杂度和空间复杂度有一定要求，这篇文章列出几种常见的单向链表反转方法。
+                            软件准备（node &amp;&amp; npm）官网下载nodejs(版本为:Linux 二进制文件 (x64))
+sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/
+sudo mv
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/算法/" class="post-category">
-                                    算法
+                            <a href="/categories/备忘/" class="post-category">
+                                    备忘
                                 </a>
                             
                             
@@ -615,8 +632,12 @@ t
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/算法/">
-                        <span class="chip bg-color">算法</span>
+                    <a href="/tags/备忘/">
+                        <span class="chip bg-color">备忘</span>
+                    </a>
+                    
+                    <a href="/tags/工具/">
+                        <span class="chip bg-color">工具</span>
                     </a>
                     
                 </div>
