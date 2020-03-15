@@ -6,14 +6,12 @@ tags:
 categories:
   - 备忘
 toc: false
-originContent: ''
 date: 2020-03-14 03:06:43
 ---
 
-
 ## 软件准备（node && npm）
 官网下载nodejs(版本为:Linux 二进制文件 (x64))
-![](https://gitee.com/sincatter/open_resources/raw/picture/static/2020-03-14 02-51-41 的屏幕截图.png)
+![](https://gitee.com/sincatter/open_resources/raw/picture/static/nodejs_download.png)
 ```shell
 sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/
 sudo mv /opt/node-v12.16.1-linux-x64 /opt/nodejs
@@ -39,5 +37,3 @@ sudo npm install -g hexo-cli
 cd blog
 npm install hexo --save
 ```
-
-
