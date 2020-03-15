@@ -8,12 +8,14 @@
     <meta name="description" content="系统
 fdisk:磁盘分区挂载
 fdisk -l 查看磁盘挂载情况
+
 fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令
+
 m 帮助
 d 删除已存在的分区
 p 查看已存在的分区
 n 新增分区，并可指定分区大小
-t ">
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -287,8 +289,10 @@ t ">
             <div id="articleContent">
                 <p>系统</p>
 <h2 id="fdisk-磁盘分区挂载"><a href="#fdisk-磁盘分区挂载" class="headerlink" title="fdisk:磁盘分区挂载"></a>fdisk:磁盘分区挂载</h2><ul>
-<li>fdisk -l 查看磁盘挂载情况</li>
-<li>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令<ul>
+<li><p>fdisk -l 查看磁盘挂载情况</p>
+</li>
+<li><p>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令</p>
+<ul>
 <li>m 帮助</li>
 <li>d 删除已存在的分区</li>
 <li>p 查看已存在的分区</li>
@@ -310,6 +314,22 @@ t ">
 <li><p>dd 拷贝文件块<br>  参考<a href="https://www.cnblogs.com/misswangxing/p/10911969.html" target="_blank" rel="noopener">pp命令详解</a></p>
 </li>
 </ul>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="修改软件源"><a href="#修改软件源" class="headerlink" title="修改软件源"></a>修改软件源</h3><p>以清华Ubuntu 18.04 LTS软件源为例</p>
+<pre class="line-numbers language-lang-shell"><code class="language-lang-shell"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>小工具：在线获取源配置<a href="https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank" rel="noopener">TIP</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

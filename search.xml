@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>基础操作记录</title>
+      <link href="/2020/03/16/ji-chu-cao-zuo-ji-lu/"/>
+      <url>/2020/03/16/ji-chu-cao-zuo-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h3><p>联想E470 启动BIOS为开机后Enter-&gt;F1，如果只是指定磁盘启动顺序则只需要F12。<br>特别的，Win10如果想要修改BIOS相关内容需要，取消设置里的快速启动，并(shif+点击关机)-&gt;疑难解答-&gt;高级选项-&gt;UEFI固件设置。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 备忘 </tag>
+            
+            <tag> 操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常识知识收集</title>
+      <link href="/2020/03/16/chang-shi-zhi-shi-shou-ji/"/>
+      <url>/2020/03/16/chang-shi-zhi-shi-shou-ji/</url>
+      
+        <content type="html"><![CDATA[<h2 id="磁力链和BT种子的区别-Video"><a href="#磁力链和BT种子的区别-Video" class="headerlink" title="磁力链和BT种子的区别(Video)"></a><a href="https://www.bilibili.com/video/av34370450" target="_blank" rel="noopener">磁力链和BT种子的区别(Video)</a></h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 备忘 </tag>
+            
+            <tag> 知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown使用记录</title>
       <link href="/2020/03/15/markdown-shi-yong-ji-lu/"/>
       <url>/2020/03/15/markdown-shi-yong-ji-lu/</url>
@@ -37,7 +91,7 @@
       <link href="/2020/03/15/shi-yong-ruan-jian-ji-lu/"/>
       <url>/2020/03/15/shi-yong-ruan-jian-ji-lu/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址</p></blockquote><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/VirtualBoxLogo.png" width="30%" height="%30%" align="center"></p><h2 id="virtualbox"><a href="#virtualbox" class="headerlink" title="virtualbox"></a>virtualbox</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序，安装时仓库版本为5.2.34<pre><code>sudo apt-get install virtualbox</code></pre></li><li>扩展包（提供USB扩展支持）<br>[<a href="https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应</a>)</li><li>官方Download地址<br><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a></li></ul><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/hexo-clientLogo.png" width="30%" height="%30%" align="center"></p><h2 id="HexoClient"><a href="#HexoClient" class="headerlink" title="HexoClient"></a>HexoClient</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序<br><a href="https://github.com/gaoyoubo/hexo-client/releases/" target="_blank" rel="noopener">https://github.com/gaoyoubo/hexo-client/releases/</a></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址</p></blockquote><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/VirtualBoxLogo.png" width="30%" height="%30%" align="center"></p><h2 id="virtualbox"><a href="#virtualbox" class="headerlink" title="virtualbox"></a>virtualbox</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序，安装时仓库版本为5.2.34<pre><code>sudo apt-get install virtualbox</code></pre></li><li>扩展包（提供USB扩展支持）<br>[<a href="https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应</a>)</li><li>官方Download地址<br><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a></li></ul><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/hexo-clientLogo.png" width="30%" height="%30%" align="center"></p><h2 id="HexoClient"><a href="#HexoClient" class="headerlink" title="HexoClient"></a>HexoClient</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序<br><a href="https://github.com/gaoyoubo/hexo-client/releases/" target="_blank" rel="noopener">https://github.com/gaoyoubo/hexo-client/releases/</a></li></ul><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/PicGoLog.png" width="30%" height="%30%" align="center"></p><h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序<br><a href="https://molunerfinn.com/PicGo/" target="_blank" rel="noopener">https://molunerfinn.com/PicGo/</a></li></ul><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/windows10-laptop.png" width="30%" height="%30%" align="center"></p><h2 id="Win10系统虚拟机镜像"><a href="#Win10系统虚拟机镜像" class="headerlink" title="Win10系统虚拟机镜像"></a>Win10系统虚拟机镜像</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>下载页面<br><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" target="_blank" rel="noopener">https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/</a></li><li>初始密码：Passw0rd!</li><li>启动后原始为英文状态，可能需要安装中文包并调整地区为中文</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -66,7 +120,7 @@
       <link href="/2020/03/14/linux-bian-cheng-ming-ling-yi-er/"/>
       <url>/2020/03/14/linux-bian-cheng-ming-ling-yi-er/</url>
       
-        <content type="html"><![CDATA[<p>系统</p><h2 id="fdisk-磁盘分区挂载"><a href="#fdisk-磁盘分区挂载" class="headerlink" title="fdisk:磁盘分区挂载"></a>fdisk:磁盘分区挂载</h2><ul><li>fdisk -l 查看磁盘挂载情况</li><li>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令<ul><li>m 帮助</li><li>d 删除已存在的分区</li><li>p 查看已存在的分区</li><li>n 新增分区，并可指定分区大小</li><li>t 改变文件系统格式对应的id，只是修改id，后续还要利用mkfs命令进行格式化</li><li>l 列出所有文件系统格式对应id</li><li>w 保存所作的分区修改</li></ul></li><li><p>mkfs 格式化分区为指定类型的文件系统</p><ul><li>-V 显示详细信息</li><li>-t 指定目的文件系统</li><li>-c 执行格式化之前检查磁盘坏道情况</li><li>示例: mkfs -V -t ext3 -c /dev/sda1</li><li>mkfs.ext3/mkfs.fat32之类更形象的命令，实质上也是在调用mkfs命令</li></ul></li><li><p>dd 拷贝文件块<br>  参考<a href="https://www.cnblogs.com/misswangxing/p/10911969.html" target="_blank" rel="noopener">pp命令详解</a></p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<p>系统</p><h2 id="fdisk-磁盘分区挂载"><a href="#fdisk-磁盘分区挂载" class="headerlink" title="fdisk:磁盘分区挂载"></a>fdisk:磁盘分区挂载</h2><ul><li><p>fdisk -l 查看磁盘挂载情况</p></li><li><p>fdisk /dev/sdx 修改/dev/sdx分区操作，以下为用过的一些命令</p><ul><li>m 帮助</li><li>d 删除已存在的分区</li><li>p 查看已存在的分区</li><li>n 新增分区，并可指定分区大小</li><li>t 改变文件系统格式对应的id，只是修改id，后续还要利用mkfs命令进行格式化</li><li>l 列出所有文件系统格式对应id</li><li>w 保存所作的分区修改</li></ul></li><li><p>mkfs 格式化分区为指定类型的文件系统</p><ul><li>-V 显示详细信息</li><li>-t 指定目的文件系统</li><li>-c 执行格式化之前检查磁盘坏道情况</li><li>示例: mkfs -V -t ext3 -c /dev/sda1</li><li>mkfs.ext3/mkfs.fat32之类更形象的命令，实质上也是在调用mkfs命令</li></ul></li><li><p>dd 拷贝文件块<br>  参考<a href="https://www.cnblogs.com/misswangxing/p/10911969.html" target="_blank" rel="noopener">pp命令详解</a></p></li></ul><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><h3 id="修改软件源"><a href="#修改软件源" class="headerlink" title="修改软件源"></a>修改软件源</h3><p>以清华Ubuntu 18.04 LTS软件源为例</p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiversedeb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse# 预发布软件源，不建议启用# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>小工具：在线获取源配置<a href="https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank" rel="noopener">TIP</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>

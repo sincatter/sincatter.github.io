@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.sincatter.com/"/>
-  <updated>2020-03-15T15:08:39.642Z</updated>
+  <updated>2020-03-15T17:35:19.674Z</updated>
   <id>https://blog.sincatter.com/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基础操作记录</title>
+    <link href="https://blog.sincatter.com/2020/03/16/ji-chu-cao-zuo-ji-lu/"/>
+    <id>https://blog.sincatter.com/2020/03/16/ji-chu-cao-zuo-ji-lu/</id>
+    <published>2020-03-15T17:34:12.000Z</published>
+    <updated>2020-03-15T17:35:19.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;BIOS设置&quot;&gt;&lt;a href=&quot;#BIOS设置&quot; class=&quot;headerlink&quot; title=&quot;BIOS设置&quot;&gt;&lt;/a&gt;BIOS设置&lt;/h3&gt;&lt;p&gt;联想E470
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="操作" scheme="https://blog.sincatter.com/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常识知识收集</title>
+    <link href="https://blog.sincatter.com/2020/03/16/chang-shi-zhi-shi-shou-ji/"/>
+    <id>https://blog.sincatter.com/2020/03/16/chang-shi-zhi-shi-shou-ji/</id>
+    <published>2020-03-15T17:14:02.000Z</published>
+    <updated>2020-03-15T17:14:02.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;磁力链和BT种子的区别-Video&quot;&gt;&lt;a href=&quot;#磁力链和BT种子的区别-Video&quot; class=&quot;headerlink&quot; title=&quot;磁力链和BT种子的区别(Video)&quot;&gt;&lt;/a&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="知识" scheme="https://blog.sincatter.com/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown使用记录</title>
@@ -52,7 +110,7 @@
     <link href="https://blog.sincatter.com/2020/03/15/shi-yong-ruan-jian-ji-lu/"/>
     <id>https://blog.sincatter.com/2020/03/15/shi-yong-ruan-jian-ji-lu/</id>
     <published>2020-03-15T11:59:34.000Z</published>
-    <updated>2020-03-15T15:02:59.708Z</updated>
+    <updated>2020-03-15T17:28:37.122Z</updated>
     
     <summary type="html">
     
@@ -86,7 +144,7 @@
     <link href="https://blog.sincatter.com/2020/03/14/linux-bian-cheng-ming-ling-yi-er/"/>
     <id>https://blog.sincatter.com/2020/03/14/linux-bian-cheng-ming-ling-yi-er/</id>
     <published>2020-03-14T15:08:44.000Z</published>
-    <updated>2020-03-15T17:05:14.466Z</updated>
+    <updated>2020-03-15T17:19:34.196Z</updated>
     
     <summary type="html">
     
@@ -96,7 +154,7 @@
         
           &lt;p&gt;系统&lt;/p&gt;
 &lt;h2 id=&quot;fdisk-磁盘分区挂载&quot;&gt;&lt;a href=&quot;#fdisk-磁盘分区挂载&quot; class=&quot;headerlink&quot; title=&quot;fdisk:磁盘分区挂载&quot;&gt;&lt;/a&gt;fdisk:磁盘分区挂载&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;fdisk -l
+&lt;li&gt;&lt;p&gt;fdisk -l
         
       
     
