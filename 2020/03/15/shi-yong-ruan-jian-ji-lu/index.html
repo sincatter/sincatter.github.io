@@ -4,14 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="单向链表反转, 木牛’博客">
-    <meta name="description" content="单向链表反转直接递归
-时间复杂度$O(n)$，空间复杂度$O(n)$   
+    <meta name="keywords" content="使用软件记录, 木牛’博客">
+    <meta name="description" content="
+此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址
 
-简单递归输出就好，适合小数据量。  
-void reverse(head){
-    if(head.next == null){
-        print(h">
+
+virtualbox
+Windows/Linux/Mac当前OS: Ubuntu 18.04 LTS
+
+
+主程序，安装时仓库版本为5.2.34sudo apt-get ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@ void reverse(head){
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>单向链表反转 | 木牛’博客</title>
+    <title>使用软件记录 | 木牛’博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -216,7 +218,7 @@ void reverse(head){
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        单向链表反转
+                        使用软件记录
                     </div>
                 </div>
             </div>
@@ -227,99 +229,10 @@ void reverse(head){
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -328,8 +241,16 @@ void reverse(head){
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/算法/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/备忘/">
+                                <span class="chip bg-color">备忘</span>
+                            </a>
+                        
+                            <a href="/tags/工具/">
+                                <span class="chip bg-color">工具</span>
+                            </a>
+                        
+                            <a href="/tags/记录/">
+                                <span class="chip bg-color">记录</span>
                             </a>
                         
                     </div>
@@ -340,8 +261,8 @@ void reverse(head){
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/算法/" class="post-category">
-                                算法
+                            <a href="/categories/备忘/" class="post-category">
+                                备忘
                             </a>
                         
                     </div>
@@ -352,7 +273,7 @@ void reverse(head){
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-06
+                    2020-03-15
                 </div>
 
                 
@@ -368,94 +289,26 @@ void reverse(head){
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="单向链表反转"><a href="#单向链表反转" class="headerlink" title="单向链表反转"></a>单向链表反转</h1><h2 id="直接递归"><a href="#直接递归" class="headerlink" title="直接递归"></a>直接递归</h2><blockquote>
-<p>时间复杂度$O(n)$，空间复杂度$O(n)$   </p>
+                <blockquote>
+<p>此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址</p>
 </blockquote>
-<p>简单递归输出就好，适合小数据量。  </p>
-<pre class="line-numbers language-lang-c"><code class="language-lang-c">void reverse(head){
-    if(head.next == null){
-        print(head);
-        return;
-    }
-    reverse(head.next);
-    print(head);
-}
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="栈存储"><a href="#栈存储" class="headerlink" title="栈存储"></a>栈存储</h2><blockquote>
-<p>时间复杂度$O(n)$，空间复杂度$O(n)$  </p>
+<p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/VirtualBoxLogo.png" width="30%" height="%30%" align="center"></p>
+<h2 id="virtualbox"><a href="#virtualbox" class="headerlink" title="virtualbox"></a>virtualbox</h2><blockquote>
+<p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p>
 </blockquote>
-<p>分为两种:存储元素地址和存储值，其中地址可以构建出一个新的逆序列表。以存储地址为例：  </p>
-<pre class="line-numbers language-lang-c"><code class="language-lang-c">void reverse(head){
-    Node cur = head;
-    while(cur != null){
-        stack.push(cur);
-        cur = cur.next;
-    }
-    while(!stack.isEmpty){
-        print(stack.pull());
-    }
-}
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="直接遍历"><a href="#直接遍历" class="headerlink" title="直接遍历"></a><del>直接遍历</del></h2><blockquote>
-<p>时间复杂度$O(n^2)$，空间复杂度0</p>
+<ul>
+<li>主程序，安装时仓库版本为5.2.34<pre><code>sudo apt-get install virtualbox
+</code></pre></li>
+<li>扩展包（提供USB扩展支持）<br>[<a href="https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应</a>)</li>
+<li>官方Download地址<br><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a></li>
+</ul>
+<p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/hexo-clientLogo.png" width="30%" height="%30%" align="center"></p>
+<h2 id="HexoClient"><a href="#HexoClient" class="headerlink" title="HexoClient"></a>HexoClient</h2><blockquote>
+<p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p>
 </blockquote>
-<h2 id="反转链表结构"><a href="#反转链表结构" class="headerlink" title="反转链表结构"></a>反转链表结构</h2><blockquote>
-<p>时间复杂度$O(n)$，空间复杂度0  </p>
-</blockquote>
-<p>这种方法不需要额为的空间，在遍历时调整元素的指向关系。<br><img src="https://raw.githubusercontent.com/sincatter/picgos/imgs/imgs20191006222506.png" alt="单向链表反转"></p>
-<pre class="line-numbers language-lang-c"><code class="language-lang-c">void reverse(head){
-    Node* cur = head.next;
-    Node* pre = head;
-    pre.next = nullptr;
-    Node* tmp = nullptr;
-    while(cur != null){
-        tmp = cur.next;
-        cur.next = pre;
-        pre = cur;
-        cur = tmp;
-    }
-}
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="LeetCode例子"><a href="#LeetCode例子" class="headerlink" title="LeetCode例子"></a>LeetCode例子</h2><h3 id="题目-92-Reverse-Linked-List-II"><a href="#题目-92-Reverse-Linked-List-II" class="headerlink" title="题目 - 92. Reverse Linked List II"></a>题目 - 92. Reverse Linked List II</h3><p>Reverse a linked list from position <em>m</em> to <em>n</em>. Do it in one-pass.<br><strong>Note:</strong> 1 ≤ <em>m</em> ≤ <em>n</em> ≤ length of list.<br><strong>Example:</strong>  </p>
-<blockquote>
-<p><strong>Input:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, <em>m</em> = 2, <em>n</em> = 4<br><strong>Output:</strong> 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;NULL</p>
-</blockquote>
-<p>反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。<br><strong>说明:</strong><br>1 ≤ m ≤ n ≤ 链表长度。<br><strong>示例:</strong>  </p>
-<blockquote>
-<p><strong>输入:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, m = 2, n = 4<br><strong>输出:</strong> 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;NULL</p>
-</blockquote>
-<h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><pre class="line-numbers language-lang-c"><code class="language-lang-c">/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-class Solution {
-public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
-        ListNode *mNode = new ListNode(0);
-        ListNode *resNode = nullptr;
-        ListNode *pre = mNode;
-        mNode->next = head;
-        for(int i = 0;i < m - 1; i++){
-            pre = pre->next;
-        }
-        ListNode *cur = pre->next;
-        ListNode *tmp = nullptr;
-        for (int i = m; i < n;i++){
-            tmp = pre->next;
-            pre->next = cur->next;
-            cur->next = pre->next->next;
-            pre->next->next = tmp;
-        }
-        resNode = mNode->next;
-        delete(mNode);
-        return resNode;
-    }
-};
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>主程序<br><a href="https://github.com/gaoyoubo/hexo-client/releases/" target="_blank" rel="noopener">https://github.com/gaoyoubo/hexo-client/releases/</a></li>
+</ul>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -631,8 +484,8 @@ public:
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/06/dan-xiang-lian-biao-fan-zhuan/">
-                    《单向链表反转》
+            <a  href="/2020/03/15/shi-yong-ruan-jian-ji-lu/">
+                    《使用软件记录》
             </a> 由
             <a href="https://blog.sincatter.com">
                 徐木牛
@@ -677,6 +530,64 @@ public:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2020/03/15/markdown-shi-yong-ji-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Markdown使用记录">
+                        
+                        <span class="card-title">Markdown使用记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            图片![替代字符](图片地址 "标题")
+标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。特殊情况下存在对图片尺寸自定
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/备忘/" class="post-category">
+                                    备忘
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/备忘/">
+                        <span class="chip bg-color">备忘</span>
+                    </a>
+                    
+                    <a href="/tags/markdown/">
+                        <span class="chip bg-color">markdown</span>
+                    </a>
+                    
+                    <a href="/tags/操作/">
+                        <span class="chip bg-color">操作</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/">
                     <div class="card-image">
                         
@@ -695,9 +606,9 @@ sudo mv
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -726,56 +637,6 @@ sudo mv
             </div>
         </div>
         
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/06/dan-xiang-lian-biao-fan-zhuan/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="单向链表反转">
-                        
-                        <span class="card-title">单向链表反转</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            单向链表的反转是关于链表的一个基本操作，使用场景的不同往往会对时间复杂度和空间复杂度有一定要求，这篇文章列出几种常见的单向链表反转方法。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/算法/" class="post-category">
-                                    算法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/算法/">
-                        <span class="chip bg-color">算法</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
     </div>
 </article>
 
@@ -783,111 +644,10 @@ sudo mv
 
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).slideUp(500);
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).slideDown(500);
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
     <footer class="page-footer bg-color">

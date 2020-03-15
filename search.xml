@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>hexo更换电脑部署</title>
-      <link href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
-      <url>/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</url>
+      <title>Markdown使用记录</title>
+      <link href="/2020/03/15/markdown-shi-yong-ji-lu/"/>
+      <url>/2020/03/15/markdown-shi-yong-ji-lu/</url>
       
-        <content type="html"><![CDATA[<h2 id="软件准备（node-amp-amp-npm）"><a href="#软件准备（node-amp-amp-npm）" class="headerlink" title="软件准备（node &amp;&amp; npm）"></a>软件准备（node &amp;&amp; npm）</h2><p>官网下载nodejs(版本为:Linux 二进制文件 (x64))<br><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/2020-03-14 02-51-41 的屏幕截图.png" alt=""></p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/sudo mv /opt/node-v12.16.1-linux-x64 /opt/nodejssudo ln -s /opt/nodejs/bin/node /usr/local/bin/nodesudo ln -s /opt/nodejs/bin/npm /usr/local/bin/npm# 更换淘宝软件源sudo npm config set registry https://registry.npm.taobao.org source ~/.bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>检查安装完毕</p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">npm -vnode -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>下载配置好的代码仓库，仓库存在两个分支hexo(文章分支)和master(静态文件分支)</p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">git clone -b hexo  git@e.coding.net:sincatter/blog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装hexo</p><pre><code>sudo npm install -g hexo-clicd blognpm install hexo --save</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><pre><code>![替代字符](图片地址 "标题")</code></pre><p>标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。<br>其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。<br>特殊情况下存在对图片尺寸自定义及居中等需求，可以尝试直接使用html嵌套。<br>例如，如下表示宽度10%，居中放置：</p><pre><code>&lt;img src="https://gitee.com/sincatter/open_resources/raw/picture/static/muniulogo.png" width="10%" align="center"&gt;</code></pre><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/muniulogo.png" width="10%" align="center"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -20,9 +20,67 @@
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> 备忘 </tag>
+            
+            <tag> markdown </tag>
+            
+            <tag> 操作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用软件记录</title>
+      <link href="/2020/03/15/shi-yong-ruan-jian-ji-lu/"/>
+      <url>/2020/03/15/shi-yong-ruan-jian-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址</p></blockquote><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/VirtualBoxLogo.png" width="30%" height="%30%" align="center"></p><h2 id="virtualbox"><a href="#virtualbox" class="headerlink" title="virtualbox"></a>virtualbox</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序，安装时仓库版本为5.2.34<pre><code>sudo apt-get install virtualbox</code></pre></li><li>扩展包（提供USB扩展支持）<br>[<a href="https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Download_Old_Builds_5_2(https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)(历史版本，版本与主程序对应</a>)</li><li>官方Download地址<br><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a></li></ul><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/hexo-clientLogo.png" width="30%" height="%30%" align="center"></p><h2 id="HexoClient"><a href="#HexoClient" class="headerlink" title="HexoClient"></a>HexoClient</h2><blockquote><p>Windows/Linux/Mac<br>当前OS: Ubuntu 18.04 LTS</p></blockquote><ul><li>主程序<br><a href="https://github.com/gaoyoubo/hexo-client/releases/" target="_blank" rel="noopener">https://github.com/gaoyoubo/hexo-client/releases/</a></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> 备忘 </tag>
+            
+            <tag> 工具 </tag>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo更换电脑部署</title>
+      <link href="/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
+      <url>/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="软件准备（node-amp-amp-npm）"><a href="#软件准备（node-amp-amp-npm）" class="headerlink" title="软件准备（node &amp;&amp; npm）"></a>软件准备（node &amp;&amp; npm）</h2><p>官网下载nodejs(版本为:Linux 二进制文件 (x64))<br><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/nodejs_download.png" alt=""></p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">sudo tar -xJf node-v12.16.1-linux-x64.tar.xz -C /opt/sudo mv /opt/node-v12.16.1-linux-x64 /opt/nodejssudo ln -s /opt/nodejs/bin/node /usr/local/bin/nodesudo ln -s /opt/nodejs/bin/npm /usr/local/bin/npm# 更换淘宝软件源sudo npm config set registry https://registry.npm.taobao.org source ~/.bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>检查安装完毕</p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">npm -vnode -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>下载配置好的代码仓库，仓库存在两个分支hexo(文章分支)和master(静态文件分支)</p><pre class="line-numbers language-lang-shell"><code class="language-lang-shell">git clone -b hexo  git@e.coding.net:sincatter/blog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装hexo</p><pre><code>sudo npm install -g hexo-clicd blognpm install hexo --save</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 备忘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 备忘 </tag>
+            
+            <tag> 工具 </tag>
             
         </tags>
       

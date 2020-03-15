@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.sincatter.com/"/>
-  <updated>2020-03-13T19:07:30.242Z</updated>
+  <updated>2020-03-15T15:08:39.642Z</updated>
   <id>https://blog.sincatter.com/</id>
   
   <author>
@@ -17,11 +17,76 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown使用记录</title>
+    <link href="https://blog.sincatter.com/2020/03/15/markdown-shi-yong-ji-lu/"/>
+    <id>https://blog.sincatter.com/2020/03/15/markdown-shi-yong-ji-lu/</id>
+    <published>2020-03-15T15:04:35.000Z</published>
+    <updated>2020-03-15T15:08:39.642Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;图片&quot;&gt;&lt;a href=&quot;#图片&quot; class=&quot;headerlink&quot; title=&quot;图片&quot;&gt;&lt;/a&gt;图片&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;![替代字符](图片地址
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="markdown" scheme="https://blog.sincatter.com/tags/markdown/"/>
+    
+      <category term="操作" scheme="https://blog.sincatter.com/tags/%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用软件记录</title>
+    <link href="https://blog.sincatter.com/2020/03/15/shi-yong-ruan-jian-ji-lu/"/>
+    <id>https://blog.sincatter.com/2020/03/15/shi-yong-ruan-jian-ji-lu/</id>
+    <published>2020-03-15T11:59:34.000Z</published>
+    <updated>2020-03-15T15:02:59.708Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;此处只有较小众无官方渠道的软件才会提供分享，其余只是记录官方地址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="工具" scheme="https://blog.sincatter.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="记录" scheme="https://blog.sincatter.com/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo更换电脑部署</title>
     <link href="https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/"/>
     <id>https://blog.sincatter.com/2020/03/14/hexo-geng-huan-dian-nao-bu-shu/</id>
     <published>2020-03-13T19:06:43.000Z</published>
-    <updated>2020-03-13T19:07:30.242Z</updated>
+    <updated>2020-03-15T11:47:49.327Z</updated>
     
     <summary type="html">
     
@@ -39,9 +104,9 @@
       <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
     
     
-      <category term="工具" scheme="https://blog.sincatter.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="备忘" scheme="https://blog.sincatter.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+      <category term="工具" scheme="https://blog.sincatter.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
