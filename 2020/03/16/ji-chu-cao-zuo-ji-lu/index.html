@@ -33,6 +33,7 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+<link rel="alternate" href="/atom.xml" title="木牛’博客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
@@ -278,25 +279,30 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="BIOS设置"><a href="#BIOS设置" class="headerlink" title="BIOS设置"></a>BIOS设置</h3><p>联想E470 启动BIOS为开机后Enter-&gt;F1，如果只是指定磁盘启动顺序则只需要F12。<br>特别的，Win10如果想要修改BIOS相关内容需要，取消设置里的快速启动，并(shif+点击关机)-&gt;疑难解答-&gt;高级选项-&gt;UEFI固件设置。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+<h3 id="虚拟环境安装scrapy"><a href="#虚拟环境安装scrapy" class="headerlink" title="虚拟环境安装scrapy"></a>虚拟环境安装scrapy</h3><ul>
+<li>Ubuntu 18.0.4 LTS使用update-alterantive配置python2/3共存<pre class="line-numbers language-lang-shell"><code class="language-lang-shell"># 添加python版本，并指定优先级
+sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python3.6 100
+sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 200
+# 选择指定版本
+sudo update-alternatives --config python
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li>创建虚拟环境<pre class="line-numbers language-lang-shell"><code class="language-lang-shell"># 安装virtualenv
+pip3 install -i https://pypi.douban.com/simple/ virtualenv
+# 创建虚拟环境目录，与实际代码位置可以不同
+virtualenv venv_scrapy
+## 切换虚拟目录
+cd venv_scrapy && source ./bin/activate
+## 安装scrapy
+pip3 install -i https://pypi.douban.com/simple/ scrapy
+## 创建scrapy项目
+cd ~/Code && scrapy startproject scrapy_prj
+## 退出虚拟环境
+deactivate
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+
             </div>
             <hr/>
 
@@ -495,52 +501,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/16/ji-chu-cao-zuo-ji-lu/">
+                <a href="/2020/03/17/linux-nei-he-bian-cheng-yi-er/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="基础操作记录">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Linux内核编程一二">
                         
-                        <span class="card-title">基础操作记录</span>
+                        <span class="card-title">Linux内核编程一二</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BIOS设置联想E470 启动BIOS为开机后Enter-&gt;F1，如果只是指定磁盘启动顺序则只需要F12。特别的，Win10如果想要修改BIOS相关内容需要，取消设置里的快速启动，并(shif+点击关机)-&gt;疑难解答-&gt;高
+                            getopt和getopt_long：获取参数
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/备忘/" class="post-category">
-                                    备忘
+                            <a href="/categories/编程/" class="post-category">
+                                    编程
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/备忘/">
-                        <span class="chip bg-color">备忘</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/操作/">
-                        <span class="chip bg-color">操作</span>
+                    <a href="/tags/C-C/">
+                        <span class="chip bg-color">C/C++</span>
                     </a>
                     
                 </div>
@@ -567,9 +571,6 @@
                     <div class="summary block-with-text">
                         
                             磁力链和BT种子的区别(Video)
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dat
                         
                     </div>
                     <div class="publish-info">

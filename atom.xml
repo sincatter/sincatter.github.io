@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.sincatter.com/"/>
-  <updated>2020-03-15T17:35:19.674Z</updated>
+  <updated>2020-03-24T16:40:28.654Z</updated>
   <id>https://blog.sincatter.com/</id>
   
   <author>
@@ -14,14 +14,73 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>资料备份</title>
+    <link href="https://blog.sincatter.com/2020/03/25/zi-liao-bei-fen/"/>
+    <id>https://blog.sincatter.com/2020/03/25/zi-liao-bei-fen/</id>
+    <published>2020-03-24T16:40:28.000Z</published>
+    <updated>2020-03-24T16:40:28.654Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2IvcyFBdE9pc3JCWEdvRGdpdDEtVWdad3pHVkNCV0pHLWc=.pdf&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="https://blog.sincatter.com/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="书籍" scheme="https://blog.sincatter.com/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+      <category term="共享" scheme="https://blog.sincatter.com/tags/%E5%85%B1%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux内核编程一二</title>
+    <link href="https://blog.sincatter.com/2020/03/17/linux-nei-he-bian-cheng-yi-er/"/>
+    <id>https://blog.sincatter.com/2020/03/17/linux-nei-he-bian-cheng-yi-er/</id>
+    <published>2020-03-16T16:40:49.000Z</published>
+    <updated>2020-03-16T16:40:50.025Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;getopt和getopt-long：获取参数&quot;&gt;&lt;a href=&quot;#getopt和getopt-long：获取参数&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="https://blog.sincatter.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Linux" scheme="https://blog.sincatter.com/tags/Linux/"/>
+    
+      <category term="C/C++" scheme="https://blog.sincatter.com/tags/C-C/"/>
+    
+  </entry>
   
   <entry>
     <title>基础操作记录</title>
     <link href="https://blog.sincatter.com/2020/03/16/ji-chu-cao-zuo-ji-lu/"/>
     <id>https://blog.sincatter.com/2020/03/16/ji-chu-cao-zuo-ji-lu/</id>
     <published>2020-03-15T17:34:12.000Z</published>
-    <updated>2020-03-15T17:35:19.674Z</updated>
+    <updated>2020-03-16T17:26:34.267Z</updated>
     
     <summary type="html">
     
@@ -212,7 +271,7 @@
       
         
         
-          &lt;h1 id=&quot;单向链表反转&quot;&gt;&lt;a href=&quot;#单向链表反转&quot; class=&quot;headerlink&quot; title=&quot;单向链表反转&quot;&gt;&lt;/a&gt;单向链表反转&lt;/h1&gt;&lt;h2 id=&quot;直接递归&quot;&gt;&lt;a href=&quot;#直接递归&quot; class=&quot;headerlink&quot;
+          &lt;script type=&quot;math/tex; mode=display&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;单向链表反转&quot;&gt;&lt;a href=&quot;#单向链表反转&quot; class=&quot;headerlink&quot; title=&quot;单向链表反转&quot;&gt;&lt;/a&gt;单向链表反转&lt;/h1&gt;&lt;h2
         
       
     
