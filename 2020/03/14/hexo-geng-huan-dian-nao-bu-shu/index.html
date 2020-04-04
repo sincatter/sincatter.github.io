@@ -296,10 +296,15 @@ node -v
 <h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>下载配置好的代码仓库，仓库存在两个分支hexo(文章分支)和master(静态文件分支)</p>
 <pre class="line-numbers language-lang-shell"><code class="language-lang-shell">git clone -b hexo  git@e.coding.net:sincatter/blog.git
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>安装hexo</p>
+<p>修改.git/config，配置coding和github路径，同时增加ssh key。<br>安装hexo</p>
 <pre><code>sudo npm install -g hexo-cli
 cd blog
 npm install hexo --save
+</code></pre><p>提交分为文章提交和blog部署</p>
+<pre><code># 部署
+hexo -d
+# 文章提交
+git add . &amp;&amp; git commit -m "" &amp;&amp; git push hexo
 </code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
