@@ -326,7 +326,25 @@ Windows/Linux/Mac当前OS: Ubuntu 18.04 LTS
 <li>初始密码：Passw0rd!</li>
 <li>启动后原始为英文状态，可能需要安装中文包并调整地区为中文</li>
 </ul>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -541,8 +559,8 @@ Windows/Linux/Mac当前OS: Ubuntu 18.04 LTS
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            图片![替代字符](图片地址 &quot;标题&quot;)
-标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。特殊情况
+                            图片![替代字符](图片地址 "标题")
+标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。特殊情况下存在对图片尺寸自定
                         
                     </div>
                     <div class="publish-info">

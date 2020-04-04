@@ -5,8 +5,8 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="Markdown使用记录, 木牛’博客">
-    <meta name="description" content="图片![替代字符](图片地址 &amp;quot;标题&amp;quot;)
-标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。特殊情况">
+    <meta name="description" content="图片![替代字符](图片地址 &#34;标题&#34;)
+标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。特殊情况下存在对图片尺寸自定">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -283,11 +283,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><pre><code>![替代字符](图片地址 &quot;标题&quot;)
+                <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><pre><code>![替代字符](图片地址 "标题")
 </code></pre><p>标准的Markdown图片使用包含三个属性:替代字符、图片地址、图片标题。<br>其中:替换字符是指当图片不可见时显示的字符，标题则是指鼠标放置与图片上显示的标题，三者均可为空。<br>特殊情况下存在对图片尺寸自定义及居中等需求，可以尝试直接使用html嵌套。<br>例如，如下表示宽度10%，居中放置：</p>
-<pre><code>&lt;img src=&quot;https://gitee.com/sincatter/open_resources/raw/picture/static/muniulogo.png&quot; width=&quot;10%&quot; align=&quot;center&quot;&gt;
+<pre><code>&lt;img src="https://gitee.com/sincatter/open_resources/raw/picture/static/muniulogo.png" width="10%" align="center"&gt;
 </code></pre><p><img src="https://gitee.com/sincatter/open_resources/raw/picture/static/muniulogo.png" width="10%" align="center"></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -503,6 +521,9 @@
                     <div class="summary block-with-text">
                         
                             磁力链和BT种子的区别(Video)
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dat
                         
                     </div>
                     <div class="publish-info">
