@@ -1,8 +1,8 @@
 ---
 title: hexo更换电脑部署
 tags:
-  - 工具
   - 备忘
+  - 工具
 categories:
   - 备忘
 toc: false
@@ -31,9 +31,17 @@ node -v
 ```shell
 git clone -b hexo  git@e.coding.net:sincatter/blog.git
 ```
+修改.git/config，配置coding和github路径，同时增加ssh key。
 安装hexo
 ```
 sudo npm install -g hexo-cli
 cd blog
 npm install hexo --save
+```
+提交分为文章提交和blog部署
+```
+# 部署
+hexo -d
+# 文章提交
+git add . && git commit -m "" && git push hexo
 ```
