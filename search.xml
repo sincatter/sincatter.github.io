@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Flutter环境配置</title>
+    <url>/2022/05/Flutter%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>想做个PC端工具，就来找一找简单易上手的跨平台GUI开发框架，其实最开始是直接准备看Electron，但查资料过程中，忽然发现Flutter今年发布的Flutter For Desktop已经进入稳定版本了，并且展示出来的效果，跨平台效果还不错，自然也就要再尝试尝试了。</p>
+<p>本文操作环境为Windows 10，其中大部分内容均来源于官方网站和网络博客搜集。</p>
+<span id="more"></span>
+
+<h1 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h1><ol>
+<li>安装基本开发工具(Visual Studio Code)为主</li>
+<li>配置好Windows桌面开发基础环境，有可以调试</li>
+<li>配置好Android开发基础环境，并可以调试</li>
+</ol>
+<h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><h2 id="基本要求"><a href="#基本要求" class="headerlink" title="基本要求"></a>基本要求</h2><blockquote>
+<p>引用自官方文档</p>
+</blockquote>
+<ul>
+<li>操作系统：Windows 7 SP1 或更高的版本（基于 x86-64 的 64 位操作系统）。</li>
+<li>磁盘空间：除安装 IDE 和一些工具之外还应有至少 1.64 GB 的空间。</li>
+<li>工具：要让 Flutter 在你的开发环境中正常使用，依赖于以下的工具：<ul>
+<li>Windows PowerShell 5.0 或者更高的版本（Windows 10 中已预装）</li>
+<li>Git for Windows 2.x，并且勾选从 Windows 命令提示符使用 Git 选项。</li>
+<li>如果 Windows 版的 Git 已经安装过了，那么请确保能从命令提示符或者 PowerShell 中直接执行 git 命令。</li>
+</ul>
+</li>
+</ul>
+<h2 id="获取Flutter-SDK"><a href="#获取Flutter-SDK" class="headerlink" title="获取Flutter SDK"></a>获取Flutter SDK</h2><ol>
+<li>根据意愿下载对应版本SDK包：<a href="https://flutter.cn/docs/development/tools/sdk/releases">Flutter SDK 版本列表</a></li>
+<li>直接解压放到合适位置，比如笔者放在：<code>C:\ProgramFiles\flutter</code></li>
+<li>配置环境变量：在PATH环境变量中增加flutter中的bin，以笔者为例，将<code>C:\ProgramFiles\flutter\bin</code>追加到Path中。这里注意，Path中路径的先后顺序会影响执行时系统搜索的优先级，如果之前有配置过flutter，注意路径的顺序问题。</li>
+<li>执行flutter doctor，查看当前缺失内容，下面示例，是笔者配置完成的提示，这里依次介绍对应内容：</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">C:\Users\sinca&gt;flutter doctor</span><br><span class="line">Doctor summary (to see all details, run flutter doctor <span class="literal">-v</span>):</span><br><span class="line"><span class="function">[√] <span class="title">Flutter</span></span> (Channel stable, <span class="number">2.10</span>.<span class="number">5</span>, on Microsoft Windows [<span class="type">Version</span> <span class="number">10.0</span><span class="type">.19044.1645</span>], locale zh<span class="literal">-CN</span>)</span><br><span class="line">[√] Android toolchain - develop <span class="keyword">for</span> Android devices (Android SDK version <span class="number">32.1</span>.<span class="number">0</span><span class="literal">-rc1</span>)</span><br><span class="line">[√] Chrome - develop <span class="keyword">for</span> the web</span><br><span class="line">[√] Visual Studio - develop <span class="keyword">for</span> Windows (Visual Studio Community <span class="number">2022</span> <span class="number">17.1</span>.<span class="number">6</span>)</span><br><span class="line">[√] Android Studio (version <span class="number">2021.1</span>)</span><br><span class="line">[√] VS Code (version <span class="number">1.66</span>.<span class="number">2</span>)</span><br><span class="line">[√] Proxy Configuration</span><br><span class="line">[√] Connected device (<span class="number">3</span> available)</span><br><span class="line">[√] HTTP Host Availability</span><br><span class="line"></span><br><span class="line">• No issues found!</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>Flutter：flutter SDK是否配置合理，1-3步完成后即可</p>
+</li>
+<li><p>Android toolchain：Android编译链工具，当前google官方已不直接提供单独工具包，跟随Android Studio安装后管理下载配置</p>
+<p>  这里在安装Android编译链之后会有一个同意协议的操作，执行<code>flutter doctor --android-licenses</code>按提示同意即可，下文会有说明</p>
+</li>
+<li><p>Visual Studio：用来提供Windows C++编译环境，用以开发调试Flutter For Destop(Windows)</p>
+</li>
+<li><p>Chrome：可选项，安装有Chrome后就会成功，用以调试Flutter For Web，如果用Edge也可以，只是这里会是叉叉。</p>
+</li>
+<li><p>Android Studio：官方推荐的Android For Android开发IDE，集成了其代码开发的所有工具，笔者准备使用vscode开发，所以这个不做重点，但同样需要安装Visual Studio之后，通过SDK管理器安装Android编译工具链，否则无法通过flutter对安卓真机进行USB调试。</p>
+</li>
+<li><p>VS Code：笔者采用的开发环境，与Android Studio二选一即可</p>
+</li>
+<li><p>Proxy Configuration：国内网络环境众所周知的原因，在访问google提供的内容时很可能网络不通，可以通过国内镜像的方式改善。但笔者怕麻烦，就直接配置了命令行代理，具体为，环境变量中增加两条自己预先各种渠道设置好的代理：</p>
+</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">HTTP_PROXY=http://<span class="number">192.168</span>.<span class="number">2.106</span>:<span class="number">1081</span></span><br><span class="line">HTTPS_PROXY=http://<span class="number">192.168</span>.<span class="number">2.106</span>:<span class="number">1081</span></span><br><span class="line">NO_PROXY=localhost,<span class="number">127.0</span>.<span class="number">0.1</span>,<span class="number">192.168</span>.*</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Connected device：已经连接的客户端，笔者当前没有连接手机，故只有三个设备（Edge，Chrome，Windows）</li>
+<li>HTTP Host Availability：测试网络连通性（吐槽下google的开发工具，没有网络很多都是废物）</li>
+</ul>
+<h2 id="配置Android开发环境"><a href="#配置Android开发环境" class="headerlink" title="配置Android开发环境"></a>配置Android开发环境</h2><ol>
+<li>下载并安装<a href="https://developer.android.google.cn/studio">Android Studio</a>，这里根据提示进行安装即可，安装完成后，再次运行flutter doctor，即可以看到对应选项已打勾</li>
+<li>配置Google USB Driver，已经安装了Android Studio（后面简称AS），就可以使用AS进行安装，依次点击 <strong>Tools &gt; SDK Manager &gt; SDK Tools标签页 &gt; 选中”Google USB Driver“ &gt; OK</strong></li>
+<li>手机端配置USB调试（这里以小米手机为例）<ol>
+<li>设置 &gt; 我的设备 &gt; 全部参数 &gt; 多次点击”MIUI版本”，即可开启”开启开发这选项“</li>
+<li>设置 &gt; 更多参数 &gt; 开发者选项，打开”USB 调试“和”USB 安装“选项</li>
+<li>手机通过USB数据线（注意这里是数据线，不能只是充电线），弹出”允许 USB调试吗“，勾选”一律允许…”，并确定，之后选择”USB用于” “文件传输</li>
+<li>PC端执行flutter doctor或flutter devices，则会发现，刚添加的手机已经在设备列表中了</li>
+</ol>
+</li>
+<li>安装完上述工具后，需要同意Android SDK平台协议。执行以下命令，仔细阅读协议后’Y’同意即可</li>
+</ol>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">flutter doctor <span class="literal">--android-licenses</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Windows编译环境"><a href="#Windows编译环境" class="headerlink" title="Windows编译环境"></a>Windows编译环境</h2><p>下载安装<a href="https://visualstudio.microsoft.com/zh-hans/downloads/">Visual Studio</a>（Visual Studio不同于Visual Studio Code），其中安装时勾选”使用 C++ 的桌面开发“</p>
+<h2 id="Visual-Studio-Code安装配置"><a href="#Visual-Studio-Code安装配置" class="headerlink" title="Visual Studio Code安装配置"></a>Visual Studio Code安装配置</h2><ol>
+<li>安装<a href="https://code.visualstudio.com/">Visual Studio Code</a>（以下简称vscode）</li>
+<li>安装Flutter和Dart插件<ol>
+<li>运行vscode，扩展搜索输入框中输入”flutter“，然后在列表中选择 <strong>Flutter</strong> 并单击 <strong>Install</strong>。此过程中会自动安装必需的 Dart 插件。</li>
+<li>点击 ”重新加载“ 以重新启动 VS Code。</li>
+</ol>
+</li>
+<li>快捷键<code>Ctrl+Shift+P</code>，输入并选择”<strong>Flutter: Run Flutter Doctor“</strong>，观察输出结果是否正常</li>
+</ol>
+<h2 id="创建应用程序"><a href="#创建应用程序" class="headerlink" title="创建应用程序"></a>创建应用程序</h2><ol>
+<li>在目标目录下执行<code>flutter create winfun</code>随后用vscode，或直接在vscode中Ctrl+Shift+P输入并选择”<strong>Flutter: New Project” &gt; Application</strong>，之后根据提示创建出目标工程</li>
+<li>编译并执行应用程序<ol>
+<li><p>VS Code 的右下角状态栏中有当前设备，可点击快速切换，以下图为例，当前为Windows设备</p>
+ <img src="/2022/05/Flutter%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2022-05-04_171116.png" class="">
+</li>
+<li><p>运行 <strong>Run &gt; Start Debugging</strong> 或按下 F5。</p>
+</li>
+<li><p>等待应用启动，启动进度会在 <strong>Debug Console</strong> 中展示。如果当前设备时Android设备，注意Android设备上的提醒，及时点击同意或确认。</p>
+</li>
+<li><p>Flutter支持热修改，启动后，修改代码报错会自动将修改热更新到目标设备。</p>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浪潮资源</title>
+    <url>/2024/07/%E6%B5%AA%E6%BD%AE%E8%B5%84%E6%BA%90/</url>
+    <content><![CDATA[<p>记录下搜集到使用过的浪潮相关资源</p>
+<span id="more"></span>
+
+<h1 id="5212M5"><a href="#5212M5" class="headerlink" title="5212M5"></a>5212M5</h1><ol>
+<li><a href="https://www.alipan.com/s/ZsMMRr6TWr8">浪潮英信服务器 SA5212M5 用户手册 V2.5</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>归档资源</tag>
+        <tag>浪潮</tag>
+      </tags>
+  </entry>
+</search>
